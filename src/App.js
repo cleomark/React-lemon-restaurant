@@ -1,35 +1,17 @@
+import React from "react";
+import Header from "./header"; // Import the Header component
+import Nav from "./Nav"; // Import the Nav component
+import Main from "./Main"; // Import the Main component
+import Footer from "./Footer"; // Import the Footer component
 import "./App.css";
 
 function App() {
   return (
     <>
-      {" "}
-      {/* React Fragment */}
-      <header>
-        {" "}
-        {/* Semantic tag for header section */}
-        {/* Your header content here */}
-      </header>
-      <nav>
-        {" "}
-        {/* Semantic tag for navigation section */}
-        {/* Your navigation content here */}
-      </nav>
-      <main>
-        {" "}
-        {/* Semantic tag for main content section */}
-        <div className="App">
-          {" "}
-          {/* Regular div for specific content within main */}
-          Homepage
-        </div>
-        {/* Other content sections within main */}
-      </main>
-      <footer>
-        {" "}
-        {/* Semantic tag for footer section */}
-        {/* Your footer content here */}
-      </footer>
+      <Header /> {/* Use the Header component */}
+      <Nav /> {/* Use the Nav component */}
+      <Main /> {/* Use the Main component */}
+      <Footer /> {/* Use the Footer component */}
     </>
   );
 }
