@@ -1,6 +1,6 @@
 # Filipino Little Lemon Restaurant
 
-The Little-Lemon-Restaurant project is a capstone project developed as part of Meta Front-End Developer course. Responsive, with validation without using formik or chakra ui.
+The Little-Lemon-Restaurant project is a capstone project developed as part of Meta Front-End Developer course.
 
 ## Available Scripts
 
