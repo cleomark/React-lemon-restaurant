@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "../assets/logo-square.png";
+import logo from "../../assets/logo-square.png";
 
 function Footer() {
   return (
@@ -47,13 +47,11 @@ function Footer() {
             </div>
             <div className="footer-col">
               <ul>
-                <li>
-                  <a>Address</a>
-                </li>
+                <li>Adress</li>
                 <li>
                   <a href="#home">Instagram</a>
                 </li>
-                <li>+93609519511</li>
+                <li>+351 222 222 222</li>
               </ul>
             </div>
           </div>

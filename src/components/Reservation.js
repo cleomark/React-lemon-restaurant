@@ -1,6 +1,6 @@
 import React, { useEffect, useReducer } from "react";
 import image from "../assets/restaurantfood.jpg";
-import BookingForm from "./BookingForm";
+import BookingForm from "./Booking/BookingForm";
 import { fetchAPI } from "../API";
 
 const reducer = (state, action) => {
@@ -31,7 +31,7 @@ function Reservation() {
 
   return (
     <div className="container">
-      <div className="reservation">
+      <div id="booking" className="reservation">
         <div className="reservation-grid">
           <div className="reservation-left">
             <h1>Reserve a table</h1>

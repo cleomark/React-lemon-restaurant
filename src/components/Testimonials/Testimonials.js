@@ -1,5 +1,5 @@
 import React from "react";
-import person from "../assets/people/person1.jpeg";
+import person from "../../assets/people/person1.jpeg";
 
 function Testimonials() {
   return (

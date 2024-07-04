@@ -1,5 +1,5 @@
 import React from "react";
-import lemon from "../assets/lemon.jpg";
+import lemon from "../../assets/lemon.jpg";
 
 function SpecialCard() {
   return (
