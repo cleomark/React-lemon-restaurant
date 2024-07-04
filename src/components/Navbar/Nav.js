@@ -1,10 +1,11 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Header from "../Header/Header";
 import BurgerMenu from "./BurgerMenu/BurgerMenu";
 import "./Nav.css";
 
 function Nav() {
+  const navigate = useNavigate();
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
 
@@ -22,8 +23,19 @@ function Nav() {
   }, [prevScrollPos]);
 
   const scrollTo = (section) => {
-    const aboutElement = document.querySelector(section);
-    aboutElement.scrollIntoView({ behavior: "smooth" });
+    const element = document.querySelector(section);
+    if (element) {
+      element.scrollIntoView({ behavior: "smooth" });
+    } else {
+      // If the element doesn't exist, navigate to the home page and then scroll
+      navigate("/");
+      setTimeout(() => {
+        const newElement = document.querySelector(section);
+        if (newElement) {
+          newElement.scrollIntoView({ behavior: "smooth" });
+        }
+      }, 100); // Small delay to ensure the new page has loaded
+    }
   };
 
   return (
@@ -57,9 +69,9 @@ function Nav() {
               </Link>
             </li>
             <li
-              onClick={() => {
-                scrollTo("#booking");
-              }}
+            // onClick={() => {
+            //   scrollTo("#booking");
+            // }}
             >
               <Link to="/booking">Booking</Link>
             </li>

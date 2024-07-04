@@ -88,6 +88,7 @@ function BookingForm({ dispatch, state }) {
         <option aria-label="Birthday">Birthday</option>
         <option aria-label="Anniversary">Anniversary</option>
       </select>
+      <br />
       <input
         type="submit"
         className="submit-button"
@@ -96,7 +97,7 @@ function BookingForm({ dispatch, state }) {
             ? { backgroundColor: "#d9d9d9" }
             : { backgroundColor: "#f4ce14" }
         }
-        value="Make Your reservation"
+        value="Make your reservation"
         disabled={!reservationDate}
         aria-label="Submit your reservation"
       />
