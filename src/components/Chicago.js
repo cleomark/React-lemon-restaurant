@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/restauranfood.jpg";
+import image from "../assets/map.png";
 
 function Chicago() {
   return (
@@ -18,11 +18,7 @@ function Chicago() {
             </p>
           </div>
           <div className="chicago-right">
-            Images go here
-            {/*
-                <img id='image1' src={image} />
-                <img id='image2' src={image} />
-              */}
+            <img id="image1" src={image} />
           </div>
         </div>
       </div>

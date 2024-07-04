@@ -18,10 +18,7 @@ function CallToAction() {
               <button>Reserve a table</button>
             </div>
             <div className="main-right-content">
-              <img
-                src={image}
-                style={{ width: "200px", bordeRadius: "50px" }}
-              />
+              <img src={image} />
             </div>
           </div>
         </main>
