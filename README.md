@@ -1,6 +1,6 @@
-# Getting Started with Create React App
+# Filipino Little Lemon Restaurant
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+The Little-Lemon-Restaurant project is a capstone project developed as part of Meta Front-End Developer course. Responsive, with validation without using formik or chakra ui.
 
 ## Available Scripts
 
