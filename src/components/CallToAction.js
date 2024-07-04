@@ -1,7 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import image from "../assets/restaurantfood.jpg";
 
 function CallToAction() {
+  const navigate = useNavigate();
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    navigate("/booking");
+  };
+
   return (
     <div className="main-bg">
       <div className="container">
@@ -15,7 +23,9 @@ function CallToAction() {
                 Praesent euismod condimentum ante finibus consequat. Donec
                 Mauris accumsan tellus mi, vitae rutrum felis scelerisque at.{" "}
               </p>
-              <button>Reserve a table</button>
+              <button onClick={handleSubmit} aria-label="Reserve a table">
+                Reserve a table
+              </button>
             </div>
             <div className="main-right-content">
               <img src={image} />
