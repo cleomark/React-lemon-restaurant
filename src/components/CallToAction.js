@@ -1,5 +1,5 @@
 import React from "react";
-import image from "../assets/restauranfood.jpg";
+import image from "../assets/restaurantfood.jpg";
 
 function CallToAction() {
   return (
