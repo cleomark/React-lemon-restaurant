@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import Header from "../Header/Header";
-import BurgerMenu from "./BurgerMenu";
+import BurgerMenu from "./BurgerMenu/BurgerMenu";
+import "./Nav.css";
 
 function Nav() {
   const [prevScrollPos, setPrevScrollPos] = useState(0);
@@ -41,7 +42,7 @@ function Nav() {
       }}
     >
       <BurgerMenu />
-      <div class="container">
+      <div className="container">
         <nav>
           <Header />
           <ul>

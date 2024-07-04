@@ -1,5 +1,5 @@
 import React from "react";
-import CallToAction from "../CallToAction/CallToAction";
+import CallToAction from "../Hero/Hero";
 import About from "../About/About";
 import Specials from "../Specials/Specials";
 import Testimonials from "../Testimonials/Testimonials";

@@ -1,5 +1,5 @@
 import { render, screen, fireEvent } from "@testing-library/react";
-import BookingForm from "./components/Booking/BookingForm";
+import BookingForm from "./components/Booking/BookingForm/BookingForm";
 import { initializeTimes, updateTimes, state } from "./components/Reservation";
 import { fetchAPI } from "./API";
 import { useNavigate } from "react-router-dom";
